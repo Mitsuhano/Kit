@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute kit</title>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-photo/neon-tropical-monstera-leaf-banner_53876-138943.jpg?t=st=1711652323~exp=1711655923~hmac=8925e0134e28fe936963142c46a7e99331ba3215616ff7e0f53caccae99d92e0&w=1380");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            height: 100vh;
+            position: relative;
+        }
+        .container {
+            position: absolute;
+            width: 70vw;
+            height: 80vh;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+        .container img {
+            width: 100%;
+            height: 100%;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 60px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .container:hover .overlay {
+            display: flex;
+        }
+        .container .n {
+            display: none;
+        }
+        .container:hover .n {
+            display: flex;
+            font-size: 30px;
+            top: 95%;
+            left:84%;
+            position: absolute;
+            transform: translate(-10%, -100%); 
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://img.freepik.com/free-photo/cute-kitten-sitting-outdoors-looking-at-camera-surrounded-by-snow-generated-by-artificial-intelligence_188544-84910.jpg?w=1380&t=st=1711650768~exp=1711651368~hmac=dbfcce35183fa0805fd163a678b07f7c19fed12015590b829f3aef7fa5641ab4" alt="Image">
+        <div class="overlay">Котек</div>
+        <div class="n">By Shershun Eujen</div>
+    </div>
+</body>
+</html>
